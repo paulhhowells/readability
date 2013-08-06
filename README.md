@@ -16,6 +16,7 @@ goals
 * gauge for myself the range of CPLs that are comfortable to read
 * ask other people which range of CPLs they find comfortable to read
 
+
 * I’m not planning on running indepth, timed reading speed and comprehension tests with a diverse control and (large) test base (although this may well be valuable)
   * Such indepth research should also be careful to factor in screen size, physical type size (inches / mm) on the screen, and distance from reader.
 * Initially I am not planning on testing the effect of leading on the results.  Without a doubt leading affects readability, so looking for an interaction with CPL would make sense
