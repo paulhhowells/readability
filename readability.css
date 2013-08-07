@@ -22,7 +22,8 @@ h1 {
 
 /* for the sake of speed of writing the CSS is only targeted to run this experiment on my Mac, feel free to adjust clearfixing to run elsewhere */
 .wrapper {
-  width: 4000px;
+  width: 3800px;
+  padding: 0 40px 0 40px
 }
 .row {
   clear: both;

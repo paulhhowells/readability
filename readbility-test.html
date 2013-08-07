@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>readability</title>
-	<link rel="stylesheet" href="readability.css" media="screen" title="Default" />
+	<link rel="stylesheet" href="readability.css" />
 	<style>
 	  p {
   	  margin-bottom: 20px;
@@ -16,6 +16,34 @@
       word-wrap: normal;
       word-break: normal;
       /* white-space: normal; */
+    }
+    .cpl-row {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .numbers {
+      width: 4em;
+      padding-left: 1em;
+      color: #ccc;
+      font-size: 10px;
+      letter-spacing: 0.5pt;
+    }
+    
+    .s-12 {font-size: 12px; line-height: 18px;}
+    .s-13 {font-size: 13px; line-height: 20px;}
+    .s-14 {font-size: 14px; line-height: 21px;}
+    .s-16 {font-size: 16px; line-height: 24px;}
+    .s-18 {font-size: 18px; line-height: 27px;}
+    /*
+    .s-12 .numbers {line-height: 18px;}
+    .s-13 .numbers {line-height: 20px;}
+    .s-14 .numbers {line-height: 21px;}
+    .s-16 .numbers {line-height: 24px;}
+    .s-18 .numbers {line-height: 27px;}                      
+    */
+    
+    .test-item {
+      margin: 0 2em 0 2em;
     }
 	</style>
 </head>
@@ -26,14 +54,13 @@
 		<h2>helvetica</h2>
 			  
 		<div class="row cpl-row">  		  
-		  <h3>cpl 45</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 45 = 146.66 lines</p>
-		  
+		  <h3>cpl 45</h3>		  
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 247px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -58,14 +85,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 266px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -90,14 +118,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 290px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -122,14 +151,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 322px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -154,14 +184,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 364px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -186,20 +217,20 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->
 		
 		
 		<div class="row cpl-row">  		  
-		  <h3>cpl 50</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 50 = 132 lines</p>		  
+		  <h3>cpl 50</h3>	  
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 272px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -224,14 +255,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 294px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -256,14 +288,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 320px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -288,14 +321,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 355px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -320,14 +354,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 402px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -352,7 +387,7 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->
@@ -363,12 +398,13 @@ Through the gloom one could dimly catch a glimpse of bodies lying in strange fan
 		  
 		<div class="row cpl-row">  		  
 		  <h3>cpl 55</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 55 = 120 lines</p>  
+		 
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 299px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -393,14 +429,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 323px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -425,14 +462,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 352px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -457,14 +495,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 390px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -489,14 +528,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 442px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -521,7 +561,7 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->		  
@@ -533,12 +573,13 @@ Through the gloom one could dimly catch a glimpse of bodies lying in strange fan
 	  
 	  <div class="row cpl-row">  		  
 		  <h3>cpl 60</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 60 = 110 lines</p> 
+		
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 326px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -563,14 +604,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 351px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -595,14 +637,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 383px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -627,14 +670,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 425px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -659,14 +703,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 482px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -691,7 +736,7 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->
@@ -703,12 +748,13 @@ Through the gloom one could dimly catch a glimpse of bodies lying in strange fan
 	  
 	  <div class="row cpl-row">  		  
 		  <h3>cpl 66</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 66 = 100 lines</p>
+		
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 358px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -733,14 +779,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 386px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -765,14 +812,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 421px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -797,14 +845,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 467px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -829,14 +878,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 529px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -861,7 +911,7 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->	  
@@ -870,12 +920,13 @@ Through the gloom one could dimly catch a glimpse of bodies lying in strange fan
 	  
 	  <div class="row cpl-row">  		  
 		  <h3>cpl 72</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 72 = 91.66 lines</p>
+		 
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 391px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -900,14 +951,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 420px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -932,14 +984,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 459px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -964,14 +1017,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 510px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -996,14 +1050,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 578px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1028,7 +1083,7 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->		  
@@ -1042,12 +1097,13 @@ Through the gloom one could dimly catch a glimpse of bodies lying in strange fan
 	  
 	  <div class="row cpl-row">  		  
 		  <h3>cpl 80</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 80 = 82.5 lines</p>
+		
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 433px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1072,14 +1128,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 467px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1104,14 +1161,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 510px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1136,14 +1194,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 565px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1168,14 +1227,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 641px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1200,7 +1260,7 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->		
@@ -1211,12 +1271,13 @@ Through the gloom one could dimly catch a glimpse of bodies lying in strange fan
 	  
 	  <div class="row cpl-row">  		  
 		  <h3>cpl 90</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 90 = 73.33 lines</p>
+		  
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 488px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1241,14 +1302,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 526px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1273,14 +1335,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 573px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1305,14 +1368,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 636px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1337,14 +1401,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 721px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1369,7 +1434,7 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->	
@@ -1382,12 +1447,13 @@ Through the gloom one could dimly catch a glimpse of bodies lying in strange fan
 	  
 	  <div class="row cpl-row">  		  
 		  <h3>cpl 100</h3>
-		  <p>6600 characters (inc. spaces and punctuation) / 100 = 66 lines</p>
+		
   		<div class="column test-item">
   		  <h4>12px</h4>
-    		<div class="column numbers">
+  		  <div class="s-12">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s12" style="width: 541px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1412,14 +1478,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>13px</h4>
-    		<div class="column numbers">
+  		  <div class="s-13">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s13" style="width: 584px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1444,14 +1511,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>14px</h4>
-    		<div class="column numbers">
+  		  <div class="s-14">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s14" style="width: 637px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1476,14 +1544,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>16px</h4>
-    		<div class="column numbers">
+  		  <div class="s-16">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s16" style="width: 706px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1508,14 +1577,15 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
       </div><!-- / .test-item -->
       <div class="column test-item">
   		  <h4>18px</h4>
-    		<div class="column numbers">
+  		  <div class="s-18">
+    		<!--<div class="column numbers">
     		  01 <br />02 <br />03 <br />04 <br />05 <br />05 <br />07 <br />08 <br />09 <br />10 <br />11 <br />12 <br />13 <br />14 <br />15 <br />16 <br />17 <br />18 <br />19 <br />20 <br />21 <br />22 <br />23 <br />24 <br />25 <br />26 <br />27 <br />28 <br />29 <br />30 <br />31 <br />32 <br />33 <br />34 <br />35 <br />36 <br />37 <br />38 <br />39 <br />40 <br />41 <br />42 <br />43 <br />44 <br />45 <br />46 <br />47 <br />48 <br />49 <br />50 <br />51 <br />52 <br />53 <br />54 <br />55 <br />56 <br />57 <br />58 <br />59 <br />60 <br />61 <br />62 <br />63 <br />64 <br />65 <br />66 <br />67 <br />68 <br />69 <br />70 <br />71 <br />72 <br />73 <br />74 <br />75 <br />76 <br />77 <br />78 <br />79 <br />80 <br />81 <br />82 <br />83 <br />84 <br />85 <br />86 <br />87 <br />88 <br />89 <br />90 <br />91 <br />92 <br />93 <br />94 <br />95 <br />96 <br />97 <br />98 <br />99 <br />100 <br />101 <br />102 <br />103 <br />104 <br />105 <br />105 <br />107 <br />108 <br />109 <br />110 <br />111 <br />112 <br />113 <br />114 <br />115 <br />116 <br />117 <br />118 <br />119 <br />120 <br />121 <br />122 <br />123 <br />124 <br />125 <br />126 <br />127 <br />128 <br />129 <br />130 <br />131 <br />132 <br />133 <br />134 <br />135 <br />136 <br />137 <br />138 <br />139 <br />140 <br />141 <br />142 <br />143 <br />144 <br />145 <br />146 <br />147 <br />148 <br />149 <br />150 <br />
-  			</div>
+  			</div>-->
   			<div class="column helvetica s18" style="width: 801px">
     			<p>
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -1540,7 +1610,7 @@ But there was no great difficulty in the first stage of my adventure. Upper Swan
 </p>
 <p>
 Through the gloom one could dimly catch a glimpse of bodies lying in strange fantastic poses, bowed shoulders, bent knees, heads thrown back, and chins pointing upward, with here and there a dark, lack-lustre eye turned upon the newcomer. Out of the black shadows there glimmered little red circles of light, now bright, now faint, as the burning poison waxed or waned in the bowls of the metal pipes. The most lay silent, but some muttered to themselves.
-</p>
+</p></div>
   			</div>
 		</div><!-- / .test-item -->
 		</div><!-- / .row -->		  
